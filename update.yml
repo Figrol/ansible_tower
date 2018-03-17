@@ -1,0 +1,11 @@
+---
+   - hosts: all
+     sudo: yes
+     tasks:
+       - name: Run the equivalent of "Apt-get update" as a seperate step
+         apt:
+           update_cache: yes
+
+       - name: Upgrade all packages to the latest version
+         apt: 
+           upgrade: full

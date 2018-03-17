@@ -1,0 +1,6 @@
+---
+- hosts: Ubuntu-Mac
+  sudo: yes
+  tasks:
+   - name: Install Nginx
+     apt: pkg=nginx state=installed update_cache=true
